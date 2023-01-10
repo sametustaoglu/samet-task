@@ -1,7 +1,10 @@
 name: ci
 
 on:
+
   push:
+    paths-ignore:
+      - 'manifests/**'
     branches:
       - 'main'
 
