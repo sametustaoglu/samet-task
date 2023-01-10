@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: task
-        image: sametustaoglu/samet-task:83e20f6
+        image: sametustaoglu/samet-task:bf0022e
         ports:
         - containerPort: 8080
