@@ -21,4 +21,4 @@ spec:
   tls:
   - hosts:
     - demo.globalit.pw
-    secretName: demo-secret # do not change, this is provided by Argo CD
+    secretName: task-tls # do not change, this is provided by Argo CD
