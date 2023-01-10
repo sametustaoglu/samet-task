@@ -31,6 +31,8 @@ jobs:
     needs: docker
     steps:
       - uses: actions/checkout@v3
+        with: 
+          token: ${{ secrets.TOKEN_GIT }}
 
       - name: change tag
         run: sed -i "s/samet-task:.*/samet-task:${GITHUB_SHA::7}/g" ./manifests/deployment.yaml
